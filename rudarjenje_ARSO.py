@@ -2,7 +2,12 @@ import numpy as np
 import requests
 import random
 import time
+import os
 
+if os.path.isdir("zbrani_podatki"):
+    pass
+else:
+    os.mkdir("zbrani_podatki")
 # Za vsako merilno postajo v datoteko zapiše v formatu:
 # leto,mesec,dan,etp,padavine,Tmin,Tmax,Tpov,Tmin5
 
