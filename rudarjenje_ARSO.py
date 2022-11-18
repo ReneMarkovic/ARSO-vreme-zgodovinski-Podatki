@@ -32,7 +32,7 @@ for mesto, leto_start in merilne_postaje:
     
     while int(f'{leto}' + f'{mesec:02}') < 202211:
         
-        # time.sleep(random.uniform(0.5,3))
+        time.sleep(random.uniform(0.5,3))
     
         link = www + mesto + '_' + f'{leto}' + f'{mesec:02}' + '.txt'
         
