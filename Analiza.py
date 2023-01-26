@@ -148,6 +148,7 @@ plt.close()
       ########################           POVPREČNI PODATKI ZA CELO SLOVENIJO PO ČASU
       ########################
       ######################## 
+"""
 Tmin_list = []
 Tmax_list = []
 Tpov_list = []
@@ -176,5 +177,37 @@ plt.title('Povprečen Tmin, Tmax, and Tpov po času')
 plt.savefig("Avg_temp_celaSLO.jpg",dpi=200,bbox_inches='tight')
 plt.show()
 plt.close()
+"""
+      ########################
+      ########################
+      ########################           opisna statistika v vsakem mestu
+      ########################
+      ######################## 
+mean_Tpov = []
+std_Tpov = []
+max_Tmax = []
+min_Tmin = []
+labels_row=[]
+# iterate through files in folder
+for filename in os.listdir(folder):
+    if filename.endswith(".csv"):
+        data = pd.read_csv(os.path.join(folder, filename), header=None, names=['year', 'month', 'day', 'etp', 'padavine', 'Tmin', 'Tmax', 'Tpov'])
+        labels_row.append(filename)
+        mean_Tpov.append(data['Tpov'].mean())
+        std_Tpov.append(data['Tpov'].std())
+        max_Tmax.append(data['Tmax'].max())
+        min_Tmin.append(data['Tmin'].min())
 
-            
+# create dataframe with values
+data = {'mean_Tpov': mean_Tpov, 'std_Tpov': std_Tpov, 'max_Tmax': max_Tmax, 'min_Tmin': min_Tmin}
+df = pd.DataFrame(data)
+fig, ax = plt.subplots(1, 1)
+table = ax.table(cellText=df.values, colLabels=df.columns, loc='center',rowLabels=labels_row)
+table.auto_set_font_size(False)
+table.set_fontsize(6)
+ax.axis("off")
+table.scale(1, 1.5)
+plt.title("Opisna statistika dnevnih povprečij",y=2.10, x=0.50,fontsize=18)
+plt.savefig("Tabela_all_time_podatki.jpg",dpi=200,bbox_inches='tight')
+plt.show()
+plt.close()
