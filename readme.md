@@ -2,6 +2,29 @@
 
 V tej aplikaciji je predstavljena celovita rešitev za zajemanje zgodovisnkih dnevnih podatkov, ki so dostopne preko <a href="https://www.arso.gov.si/">ARSO</a>. Aplikacija omogoča avtomatiziran prenos podatkov za vse kraje, za katere ARSO drži zgodovinske podatke. Tipičen razpon podatkov je med letoma 1961 in letom 2022. Vendar je v določenih primerih to obdobje krajše oz. del podatkov tudi manjka.
 
+# Zagon applikacije
+
+postavite se v mapo, kjer je projekt naložen in zaženite ukak:
+```Bash
+python -m venv venv
+.\venv\scripts\activate
+```
+
+V naslednjem koraku preverite ali imete nameščene vse potrebne knjižice.
+
+```Bash
+pip install -r .\requirements.txt
+```
+
+Sledi še zagon kode z ukazom
+```Python
+python main.py
+```
+
+**Pridobivanje podatkov lahko traja tudi do 5 ur in je priporošljivo, da se izvaja v večernih urah.**
+
+
+
 # Kraji vključeni v zajeto bazo:
 <ul>
 <li>BABNO_POLJE;1961</li>
