@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 pandas
 seaborn
 scikit-learn
@@ -5,3 +6,10 @@ requests
 tqdm
 geopandas
 shapely
+=======
+pandas
+seaborn
+scikit
+requests
+tqdm
+>>>>>>> 3c25a0f3cc8ca325c6276630167bdbad045d96a5
