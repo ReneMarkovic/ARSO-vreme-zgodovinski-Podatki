@@ -16,8 +16,7 @@ def analiziraj_podatke():
     os.system("cls")
     print("    - Pričenjam z analizo podatkov.")
     wd = os.getcwd()
-    data_path = os.path.join(wd, "zbrani_podatki")
-
+    data_path = os.path.join(wd, "zbrani_podatki","CSV")
 
     folder=data_path
     for filename in os.listdir(folder):

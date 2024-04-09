@@ -21,12 +21,16 @@ def check_sub_folder():
         os.mkdir("zbrani_podatki/CSV")
     return None
 
-def get_data():
+def get_data(datum:int=202405):
+    '''
+    get_data(datum:int=202405)
+    datum: int - datum v obliki leta in meseca, do katerega želimo pridobiti podatke.
+    Funkcija pridobi podatke o vremenu iz spletne strani ARSO in jih shrani v mapo zbrani_podatki.
+    '''
     os.system("cls")
     print("    - Pričenjam z rudarjenjem podatkov na ARSO spletni strani.")
     if os.path.isdir("zbrani_podatki"):
         check_sub_folder()
-            
     else:
         os.mkdir("zbrani_podatki")
         check_sub_folder()
@@ -37,9 +41,12 @@ def get_data():
     # padavine so v enotah mm
     # Tmin je najnižja temperatura, Tmax najvišja in Tpov povprečna temperatura
     # Tmin5 je najnižja temperatura na višini 5 cm in ni podana za vse merilne postaje
-
+    
+    wd = os.getcwd()
+    
     merilne_postaje = []
-    with open('mesta.txt', 'r') as f:
+    path = os.path.join(wd, "mesta.txt")
+    with open(path, 'r') as f:
         mm = f.read().split('\n')
 
     for m in mm:
@@ -49,12 +56,16 @@ def get_data():
 
     for mesto, leto_start in tqdm(merilne_postaje,total = len(merilne_postaje), desc = "Delež pridobljenih podatkov iz merilnih mest"):
         mesec = 1
-        
+        filename = mesto+'.txt'
         leto = int(leto_start)
+        path = os.path.join(wd,"zbrani_podatki","RAW", filename)
+        GET = False
+        if filename not in os.listdir("zbrani_podatki/RAW"):
+            f = open(path, 'w')
+            f.close()
+            GET = True
         
-        f = open('zbrani_podatki/'+mesto+'.txt', 'w')
-        
-        while int(f'{leto}' + f'{mesec:02}') < 202405:
+        while (int(f'{leto}' + f'{mesec:02}') < datum) and GET:
             
             time.sleep(random.uniform(0.5,1))
             link = www + mesto + '_' + f'{leto}' + f'{mesec:02}' + '.txt'

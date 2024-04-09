@@ -1,0 +1,187 @@
+{
+    "Babno Polje": {
+      "leto": 1961,
+      "lon": 15.644167,
+      "lat": 46.270833
+    },
+    "Beli Križ": {
+      "leto": 1974,
+      "lon": 14.413333,
+      "lat": 45.770833
+    },
+    "Bilje": {
+      "leto": 1962,
+      "lon": 15.629167,
+      "lat": 46.285833
+    },
+    "Bizeljsko": {
+      "leto": 1961,
+      "lon": 15.570833,
+      "lat": 46.020833
+    },
+    "Bohinjska Češnjica": {
+      "leto": 2002,
+      "lon": 14.133333,
+      "lat": 46.316667
+    },
+    "Brnik - Letališče": {
+      "leto": 1963,
+      "lon": 14.451111,
+      "lat": 46.138889
+    },
+    "Celje - Medlog": {
+      "leto": 1961,
+      "lon": 15.266667,
+      "lat": 46.220833
+    },
+    "Cerklje - Letališče": {
+      "leto": 2005,
+      "lon": 14.5,
+      "lat": 46.083333
+    },
+    "Črnomelj - Doblice": {
+      "leto": 1961,
+      "lon": 15.166667,
+      "lat": 45.533333
+    },
+    "Godnje": {
+      "leto": 1961,
+      "lon": 15.480833,
+      "lat": 46.130833
+    },
+    "Grosuplje": {
+      "leto": 2008,
+      "lon": 14.533333,
+      "lat": 45.983333
+    },
+    "Ivanjkovci": {
+      "leto": 2008,
+      "lon": 16.033333,
+      "lat": 46.433333
+    },
+    "Jeruzalem": {
+      "leto": 1961,
+      "lon": 15.983333,
+      "lat": 46.55
+    },
+    "Kočevje": {
+      "leto": 1961,
+      "lon": 14.883333,
+      "lat": 45.65
+    },
+    "Koper": {
+      "leto": 1961,
+      "lon": 13.916667,
+      "lat": 45.55
+    },
+    "Kredarica": {
+      "leto": 1961,
+      "lon": 14.0775,
+      "lat": 46.479167
+    },
+    "Krvavec": {
+      "leto": 1961,
+      "lon": 14.516667,
+      "lat": 46.283333
+    },
+    "Lendava": {
+      "leto": 1961,
+      "lon": 16.466667,
+      "lat": 46.55
+    },
+    "Lesce": {
+      "leto": 1979,
+      "lon": 14.1,
+      "lat": 46.4166
+    },
+    "Lisca": {
+        "leto": 1984,
+        "lon": 14.233333,
+        "lat": 46.083333
+    },
+     "Ljubljana - Bežigrad": {
+        "leto": 1961,
+        "lon": 14.5,
+        "lat": 46.05
+    },
+    "Malkovec": {
+        "leto": 1961,
+        "lon": 15.21605,
+        "lat": 45.949042
+    },
+    "Maribor - Letališče": {
+        "leto": 1977,
+        "lon": 15.633333,
+        "lat": 46.566667
+    },
+    "Maribor - Tabor": {
+        "leto": 1961,
+        "lon": 15.633333,
+        "lat": 46.55
+    },
+    "Metlika": {
+        "leto": 1981,
+        "lon": 15.3,
+        "lat": 45.683333
+    },
+    "Murska Sobota - Rakičan": {
+        "leto": 1961,
+        "lon": 16.166667,
+        "lat": 46.65167
+    },
+    "Nova Gorica": {
+        "leto": 1970,
+        "lon": 13.75,
+        "lat": 45.966667
+    },
+     "Nova Vas na Blokah": {
+        "leto": 1961,
+        "lon": 14.433333,
+        "lat": 45.783333
+    },
+    "Novo Mesto": {
+        "leto": 1961,
+        "lon": 15.166667,
+        "lat": 45.783333
+    },
+    "Planina pod Golico": {
+        "leto": 1961,
+        "lon": 14.05,
+        "lat": 46.433333
+    },
+    "Policki Vrh": {
+        "leto": 1961,
+        "lon": 14.733333,
+        "lat": 46.516667
+    },
+    "Portorož - Letališče": {
+        "leto": 1987,
+        "lon": 13.633333,
+        "lat": 45.516667
+    },
+    "Postojna": {
+        "leto": 1961,
+        "lon": 14.2,
+        "lat": 45.766667
+    },
+    "Preddvor": {
+        "leto": 1991,
+        "lon": 14.633333,
+        "lat": 46.233333
+    },
+    "Radlje ob Dravi": {
+        "leto": 1961,
+        "lon": 15.05,
+        "lat": 46.533333
+    },
+    "Rateče": {
+        "leto": 1961,
+        "lon": 13.7,
+        "lat": 46.483333
+    },
+    "Sevno": {
+        "leto": 1961,
+        "lon": 15.333333,
+        "lat": 46.033333
+    }
+} 

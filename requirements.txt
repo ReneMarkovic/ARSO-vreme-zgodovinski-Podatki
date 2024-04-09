@@ -1,0 +1,7 @@
+pandas
+seaborn
+scikit-learn
+requests
+tqdm
+geopandas
+shapely
