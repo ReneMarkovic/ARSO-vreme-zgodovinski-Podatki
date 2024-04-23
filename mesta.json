@@ -119,10 +119,15 @@
         "lon": 15.633333,
         "lat": 46.55
     },
+    "Maribor Vrbanski plato":{
+      "leto": 1961,
+      "lon": 15.633333,
+      "lat": 46.55
+    },
     "Metlika": {
         "leto": 1981,
-        "lon": 15.3,
-        "lat": 45.683333
+        "lon": 15.6260,
+        "lat": 46.5678
     },
     "Murska Sobota - Rakičan": {
         "leto": 1961,

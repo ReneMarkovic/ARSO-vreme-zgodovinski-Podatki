@@ -21,7 +21,7 @@ def analiziraj_podatke():
     folder=data_path
     for filename in os.listdir(folder):
         if filename.endswith(".csv"):
-            
+            print(f"  - Analiziram {filename}")
             ########################
             ########################
             ########################           GRAFI DNEVNIH TEMPRERATUR -> CELOTEN ČAS
@@ -29,6 +29,7 @@ def analiziraj_podatke():
             ########################
             
             data = pd.read_csv(os.path.join(folder, filename), header=None, names=['year', 'month', 'day', 'etp', 'padavine', 'Tmin', 'Tmax', 'Tpov'])
+            print(data)
             data["date"] = pd.to_datetime(data[['year', 'month', 'day']])
             
             plt.plot(data['date'], data["Tmin"],label="Tmin",linewidth=1)
